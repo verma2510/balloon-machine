@@ -1,0 +1,117 @@
+.home {
+  height: 100vh;
+  width: 100%;
+  /* background: #f8c4c4; */
+}
+
+.homeWrapper {
+  /* background: #ff3131; */
+  height: 100vh;
+}
+
+.homeBackground {
+  width: 100%;
+  z-index: 99;
+}
+
+.balloonMachine {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  z-index: 2;
+}
+
+.machine {
+  height: 300px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.zoom-animation {
+  animation: zoom-in-zoom-out 1s ease;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    scale: 100%;
+  }
+  50% {
+    scale: 120%;
+  }
+  100% {
+    scale: 100%;
+  }
+}
+
+.balloonWrapper {
+  position: absolute;
+  bottom: 195px;
+  right: 240px;
+}
+
+.balloon {
+  height: 25px;
+  width: 25px;
+  transition: all 0.8s ease-in-out;
+  cursor: pointer;
+}
+
+
+.stage-1 {
+  height: 50px;
+  width: 50px;
+}
+
+
+.stage-2 {
+  height: 100px;
+  width: 100px;
+}
+
+
+.fly {
+  animation: move-horizontal 6s linear forwards;
+}
+
+@keyframes move-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-1000px,-300px);
+  }
+}
+
+.flying {
+  animation: flying-away 6s linear forwards;
+}
+
+@keyframes flying-away {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-900px, -200px);
+  }
+}
+
+
+.burst {
+  animation: burst-animation 0.5s ease forwards;
+}
+
+@keyframes burst-animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+    display: none;
+  }
+}
