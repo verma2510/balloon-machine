@@ -9,6 +9,14 @@
   height: 100vh;
 }
 
+.gameTitle{
+  position: absolute;
+  font-weight: bold;
+  right: 40%;
+  font-size: 22px;
+  top: 10%;
+}
+
 .homeBackground {
   width: 100%;
   z-index: 99;

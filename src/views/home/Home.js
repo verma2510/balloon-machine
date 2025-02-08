@@ -79,6 +79,7 @@ export const Home = () => {
   return (
     <div className="home">
       <div className="homeWrapper">
+        <div className="gameTitle">Press the machine to begins the GAME!</div>
         <div className="homePage">
           <img src={Symbol_3_copy} alt="" className="homeBackground" />
           <div className="balloonMachine">
